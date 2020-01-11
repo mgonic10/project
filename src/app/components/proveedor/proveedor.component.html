@@ -1,0 +1,430 @@
+<body>
+<!-- Content Wrapper. Contains page content -->
+<!-- <div class="content-wrapper"> -->
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <h1>
+        Proveedores
+        <small>Vista</small>
+      </h1>
+      <ol class="breadcrumb">
+        <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+        <li><a href="#">Forms</a></li>
+        <li class="active">Proveedores</li>
+      </ol>
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+      <div class="row">
+        <!-- left column -->
+        <div class="col-md-12">
+          <!-- general form elements -->
+          <div class="box box-primary">
+            <div class="box-header with-border">
+              <h3 class="box-title">Filtro de Proveedores</h3>
+            </div>
+            <!-- /.box-header -->
+            <!-- form start -->
+            <form role="form">
+              <div class="box-body">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="col-md-2">
+                      <label for="exampleInputEmail1" class="col-md-4 control-label">Proveedor: </label>
+                    </div>
+                    <div class="col-md-10">
+
+                      <div class="input-group">
+                        <div class="input-group-btn">
+                          <button type="button" class="btn btn-danger">Buscar</button>
+                        </div>
+                        <!-- /btn-group -->
+                        <input type="text" class="form-control " style="width:50%">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-xs-12">
+                    
+                      <div class="modal-footer pull-left">
+                        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#modal-info">
+                          Nuevo Proveedor
+                        </button>
+                      </div>
+                    
+                  </div>
+                </div>
+
+                <div class="modal fade" id="modal-info">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title">Registro Proveedor</h4>
+                      </div>
+                      <div class="modal-body">
+                        <div class="row">
+                          <div class="form-group">
+                              <div class="col-md-6">
+                                  <label for="exampleInputEmail1" class="col-md-4 control-label">Codigo: </label>
+                                  <div class="col-md-8">
+                                      <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Codigo">                        
+                                  </div>
+                              </div>
+                              <div class="col-md-6">
+                                <label for="exampleInputPassword1" class="col-md-4 control-label">RUC: </label>
+                                <div class="col-md-8">
+                                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="RUC">
+                                </div>
+                              </div>
+                          </div>
+                      </div>
+                      
+                      <div class="row">
+                          <div class="form-group">
+                              <div class="col-md-6">
+                                  <label for="exampleInputEmail1" class="col-md-4 control-label">Razón Social: </label>
+                                  <div class="col-md-8">
+                                      <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Razón Social">
+                                  </div>
+                              </div>
+                              <div class="col-md-6">
+                                <label for="exampleInputEmail1" class="col-md-4 control-label">Razón Comercial: </label>
+                                <div class="col-md-8">
+                                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Razón Comercial">
+                                </div>
+                              </div>
+                          </div>
+                      </div>
+      
+                      <div class="row">
+                        <div class="form-group">
+                          <div class="col-md-6">
+                            <label for="exampleInputEmail1" class="col-md-4">Dirección: </label>
+                            <div class="col-md-8">
+                              <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Dirección">
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <label for="exampleInputEmail1" class="col-md-4">Distrito: </label>
+                            <div class="col-md-8">
+                              <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Distrito">                        
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+      
+                      <div class="row">
+                        <div class="form-group">
+                          <div class="col-md-6">
+                            <label for="exampleInputEmail1" class="col-md-4">Ciudad: </label>
+                            <div class="col-md-8">
+                              <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Ciudad">
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <label for="exampleInputPassword1" class="col-md-4">Telefono: </label>
+                            <div class="col-md-8">
+                              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Telefono">                        
+                            </div>
+                          </div>
+      
+                        </div>
+                      </div>
+      
+                      <div class="row">
+                        <div class="form-group">
+                          <div class="col-md-6">
+                            <label for="exampleInputPassword1" class="col-md-4">Contacto: </label>
+                            <div class="col-md-8">
+                              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Contacto">
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <label for="exampleInputPassword1" class="col-md-4">Email Cobranza: </label>
+                            <div class="col-md-8">
+                              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Email Cobranza">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+      
+                      <div class="row">
+                        <div class="form-group">
+                          <div class="col-md-6">
+                            <label for="exampleInputPassword1" class="col-md-4">Banco: </label>
+                            <div class="col-md-8">
+                              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Banco">
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <label for="exampleInputPassword1" class="col-md-4">Cta. Corriente: </label>
+                            <div class="col-md-8">
+                              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Cta. Corriente">                        
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+      
+                      <div class="row">
+                        <div class="form-group">
+                          <div class="col-md-6">
+                            <label for="exampleInputPassword1" class="col-md-4">Codigo Interbancario: </label>
+                            <div class="col-md-8">
+                              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Codigo Interbancario">
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="checkbox">
+                              <label>
+                                <input type="checkbox"> Activo
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                        
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Salir</button>
+                        <button type="button" class="btn btn-primary">Guardar</button>
+                      </div>
+                    </div>
+                    <!-- /.modal-content -->
+                  </div>
+                  <!-- /.modal-dialog -->
+                </div>
+                <!-- /.modal -->
+
+              </div>
+              <!-- /.box-body -->
+
+              <!-- <div class="box-footer">
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </div> -->
+            </form>
+          </div>
+          <!-- /.box -->
+        </div>
+        
+      </div>
+
+      <div class="row">
+        <div class="col-xs-12">
+          <!-- /.box -->
+
+          <div class="box">
+            <div class="box-header">
+              <h3 class="box-title">Listado</h3>
+            </div>
+            <!-- /.box-header -->
+            <div class="box-body">
+              <table id="example1" class="table table-bordered table-striped">
+                <thead>
+                <tr>
+                  <th class="center">
+                    <label class="pos-rel">
+                      <input type="checkbox" class="ace" />
+                      <span class="lbl"></span>
+                    </label>
+                  </th>
+                  <th>Código</th>
+                  <th>Razón Social</th>
+                  <th>Ruc</th>
+                  <th>Nro Telefono</th>
+                  <th>Email</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                  <th class="center">
+                    <label class="pos-rel">
+                      <input type="checkbox" class="ace" />
+                      <span class="lbl"></span>
+                    </label>
+                  </th>
+                  <td>00001</td>
+                  <td>Proveedor Lima SAC</td>
+                  <td>2305949293423</td>
+                  <td>965 885 451</td>
+                  <td>proveedorlima@lima.pe</td>
+                </tr>
+                <tr>
+                  <th class="center">
+                    <label class="pos-rel">
+                      <input type="checkbox" class="ace" />
+                      <span class="lbl"></span>
+                    </label>
+                  </th>
+                  <td>00002</td>
+                  <td>Proveedor Sur SAC</td>
+                  <td>2505949293426</td>
+                  <td>995 885 454</td>
+                  <td>proveedorlima@lima.pe</td>
+                </tr>
+                <tr>
+                  <th class="center">
+                    <label class="pos-rel">
+                      <input type="checkbox" class="ace" />
+                      <span class="lbl"></span>
+                    </label>
+                  </th>
+                  <td>00003</td>
+                  <td>Proveedor Norte SAC</td>
+                  <td>2365949293427</td>
+                  <td>915 885 427</td>
+                  <td>proveedornorte@norte.pe</td>
+                </tr>
+                <tr>
+                  <th class="center">
+                    <label class="pos-rel">
+                      <input type="checkbox" class="ace" />
+                      <span class="lbl"></span>
+                    </label>
+                  </th>
+                  <td>00004</td>
+                  <td>Proveedor Centro SAC</td>
+                  <td>2155949293774</td>
+                  <td>902 885 485</td>
+                  <td>proveedorcentro@centro.pe</td>
+                </tr>
+                <tr>
+                  <th class="center">
+                    <label class="pos-rel">
+                      <input type="checkbox" class="ace" />
+                      <span class="lbl"></span>
+                    </label>
+                  </th>
+                  <td>00005</td>
+                  <td>Proveedor este SAC</td>
+                  <td>2225949293111</td>
+                  <td>911 885 433</td>
+                  <td>proveedoreste@este.pe</td>
+                </tr>
+
+                <tr>
+                  <th class="center">
+                    <label class="pos-rel">
+                      <input type="checkbox" class="ace" />
+                      <span class="lbl"></span>
+                    </label>
+                  </th>
+                  <td>00006</td>
+                  <td>Proveedor Oeste SAC</td>
+                  <td>2115949293111</td>
+                  <td>911 885 433</td>
+                  <td>proveedoroeste@Oeste.pe</td>
+                </tr>
+
+                <tr>
+                  <th class="center">
+                    <label class="pos-rel">
+                      <input type="checkbox" class="ace" />
+                      <span class="lbl"></span>
+                    </label>
+                  </th>
+                  <td>00007</td>
+                  <td>Proveedor BRS SAC</td>
+                  <td>2225949293111</td>
+                  <td>911 885 433</td>
+                  <td>proveedoreste@este.pe</td>
+                </tr>
+
+                <tr>
+                  <th class="center">
+                    <label class="pos-rel">
+                      <input type="checkbox" class="ace" />
+                      <span class="lbl"></span>
+                    </label>
+                  </th>
+                  <td>00008</td>
+                  <td>Proveedor C4K SAC</td>
+                  <td>2225949293111</td>
+                  <td>911 885 433</td>
+                  <td>proveedoreste@este.pe</td>
+                </tr>
+
+                <tr>
+                  <th class="center">
+                    <label class="pos-rel">
+                      <input type="checkbox" class="ace" />
+                      <span class="lbl"></span>
+                    </label>
+                  </th>
+                  <td>00009</td>
+                  <td>Proveedor RPM SAC</td>
+                  <td>2225949293111</td>
+                  <td>911 885 433</td>
+                  <td>proveedoreste@este.pe</td>
+                </tr>
+
+                <tr>
+                  <th class="center">
+                    <label class="pos-rel">
+                      <input type="checkbox" class="ace" />
+                      <span class="lbl"></span>
+                    </label>
+                  </th>
+                  <td>00010</td>
+                  <td>Proveedor CHICHIN SAC</td>
+                  <td>2225949293111</td>
+                  <td>911 885 433</td>
+                  <td>proveedoreste@este.pe</td>
+                </tr>
+
+                <tr>
+                  <th class="center">
+                    <label class="pos-rel">
+                      <input type="checkbox" class="ace" />
+                      <span class="lbl"></span>
+                    </label>
+                  </th>
+                  <td>00011</td>
+                  <td>Proveedor Aghu SAC</td>
+                  <td>2225949293111</td>
+                  <td>911 885 433</td>
+                  <td>proveedoreste@este.pe</td>
+                </tr>
+                
+                </tbody>
+                <!-- <tfoot>
+                <tr>
+                  <th class="center">
+                    <label class="pos-rel">
+                      <input type="checkbox" class="ace" />
+                      <span class="lbl"></span>
+                    </label>
+                  </th>
+                  <th>Código</th>
+                  <th>Razón Social</th>
+                  <th>Ruc</th>
+                  <th>Nro Telefono</th>
+                  <th>Email</th>
+                </tr>
+                </tfoot> -->
+              </table>
+            </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
+        </div>
+        <!-- /.col -->
+      </div>
+      <!-- /.row -->
+    </section>
+    <!-- /.content -->
+  <!-- </div> -->
+
+  <!-- <script src="../../../assets/bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
+  <script src="../../../assets/bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js"></script> -->
+
+  <!-- <script>  
+    $(function () {
+      $('#example1').DataTable()
+    })
+  </script> -->
+  </body>

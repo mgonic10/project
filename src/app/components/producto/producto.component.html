@@ -1,0 +1,338 @@
+<body>
+    <!-- Content Wrapper. Contains page content -->
+<!-- <div class="content-wrapper"> -->
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+        <h1>
+          Productos
+          <small>Vista</small>
+        </h1>
+        <ol class="breadcrumb">
+          <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+          <li><a href="#">Forms</a></li>
+          <li class="active">Productos</li>
+        </ol>
+      </section>
+
+      <section class="content">
+        <div class="row">
+          <!-- left column -->
+          <div class="col-md-12">
+            <!-- general form elements -->
+            <div class="box box-primary">
+              <div class="box-header with-border">
+                <h3 class="box-title">Filtro de Productos</h3>
+              </div>
+              <!-- /.box-header -->
+              <!-- form start -->
+              <form role="form">
+                <div class="box-body">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="col-md-2">
+                        <label for="exampleInputEmail1" class="col-md-4 control-label">Productos: </label>
+                      </div>
+                      <div class="col-md-10">
+  
+                        <div class="input-group">
+                          <div class="input-group-btn">
+                            <button type="button" class="btn btn-danger">Buscar</button>
+                          </div>
+                          <!-- /btn-group -->
+                          <input type="text" class="form-control " style="width:50%">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+  
+                  <div class="row">
+                    <div class="col-xs-12">
+                      
+                        <div class="modal-footer pull-left">
+                          <button type="button" class="btn btn-info" data-toggle="modal" data-target="#modal-info">
+                            Nuevo Producto
+                          </button>
+                        </div>
+                      
+                    </div>
+                  </div>
+
+                  
+
+
+  
+                  <div class="modal fade" id="modal-info">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span></button>
+                          <h4 class="modal-title">Registro Producto</h4>
+                        </div>
+                        <div class="modal-body">
+                          <div class="nav-tabs-custom">
+                            <ul class="nav nav-tabs">
+                              <li class="active"><a href="#tab_1" data-toggle="tab">Producto</a></li>
+                              <li><a href="#tab_2" data-toggle="tab">Inventario</a></li>
+                              <li><a href="#tab_3" data-toggle="tab">Stock</a></li>
+                              
+                              <!-- <li class="pull-right"><a href="#" class="text-muted"><i class="fa fa-gear"></i></a></li> -->
+                            </ul>
+                            <div class="tab-content">
+                              <div class="tab-pane active" id="tab_1">
+                                <div class="row">
+                                  <div class="form-group">
+                                      <div class="col-md-12">
+                                          <label for="exampleInputEmail1" class="col-md-4 control-label">Codigo: </label>
+                                          <div class="col-md-8">
+                                              <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Codigo">                        
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                              
+                              <div class="row">
+                                  <div class="form-group">
+                                      <div class="col-md-12">
+                                          <label for="exampleInputEmail1" class="col-md-4 control-label">Descripción: </label>
+                                          <div class="col-md-8">
+                                              <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Descripción">
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+              
+                              <div class="row">
+                                <div class="form-group">
+                                  <div class="col-md-12">
+                                    <div class="card-header">
+                                      <label for="exampleInputEmail1" class="col-md-4 card-header">Tipo Existencia: </label>
+                                    </div>
+                                    
+                                    <div class="col-md-8">
+                                      <select class="form-control col-md-12">
+                                        <option>Mercaderia</option>
+                                        <option>Suministros</option>
+                                        <option>Otros</option>
+                                      </select>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+              
+                              <div class="row">
+                                <div class="form-group">
+                                  <div class="col-md-12">
+                                    <label for="exampleInputEmail1" class="col-md-4">Aplica Venta: </label>
+                                    <div class="col-md-8">
+                                      <input type="checkbox" class="form-check-input" id="exampleCheck2">
+                                    </div>
+                                  </div>
+              
+                                </div>
+                              </div>
+                              </div>
+                              <!-- /.tab-pane -->
+                              <div class="tab-pane" id="tab_2">
+                                <div class="row">
+                                  <div class="form-group">
+                                    <div class="col-md-12">
+                                      <label for="exampleInputPassword1" class="col-md-4">Stock Minimo: </label>
+                                      <div class="col-md-8">
+                                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Stock Minimo">
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="row">
+                                  <div class="form-group">
+                                    <div class="col-md-12">
+                                      <label for="exampleInputPassword1" class="col-md-4">Stock máximo: </label>
+                                      <div class="col-md-8">
+                                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Stock máximo">
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="row">
+                                  <div class="form-group">
+                                    <div class="col-md-12">
+                                      <label for="exampleInputPassword1" class="col-md-4">Unidad Medida de Inventario: </label>
+                                      <div class="col-md-8">
+                                        <input type="password" class="form-control" id="exampleInputPassword1" readonly=readonly placeholder="Unidad">
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="row">
+                                  <div class="form-group">
+                                    <div class="col-md-12">
+                                      <label for="exampleInputPassword1" class="col-md-4">Moneda de compras: </label>
+                                      <div class="col-md-8">
+                                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Moneda">
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              
+                              
+                              <!-- /.tab-pane -->
+                              <div class="tab-pane" id="tab_3">
+                                <div class="row">
+                                  <div class="form-group">
+                                    <div class="col-md-12">
+                                      <label for="exampleInputPassword1" class="col-md-4">Producto Stock: </label>
+                                      <div class="col-md-8">
+                                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Stock">
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="row">
+                                  <div class="form-group">
+                                    <div class="col-md-12">
+                                      <label for="exampleInputPassword1" class="col-md-4">Pendiente de Entrega: </label>
+                                      <div class="col-md-8">
+                                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Pendiente de Entrega">
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="row">
+                                  <div class="form-group">
+                                    <div class="col-md-12">
+                                      <label for="exampleInputPassword1" class="col-md-4">Pendiente de Recepción </label>
+                                      <div class="col-md-8">
+                                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Pendiente de Recepción">
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- /.tab-pane -->
+                            </div>
+                            <!-- /.tab-content -->
+                          </div>
+                          
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Salir</button>
+                          <button type="button" class="btn btn-primary">Guardar</button>
+                        </div>
+                      </div>
+                      <!-- /.modal-content -->
+                    </div>
+                    <!-- /.modal-dialog -->
+                  </div>
+                  <!-- /.modal -->
+  
+                </div>
+                <!-- /.box-body -->
+  
+                <!-- <div class="box-footer">
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </div> -->
+              </form>
+            </div>
+            <!-- /.box -->
+          </div>
+          
+        </div>
+  
+        <div class="row">
+          <div class="col-xs-12">
+            <!-- /.box -->
+  
+            <div class="box">
+              <div class="box-header">
+                <h3 class="box-title">Listado</h3>
+              </div>
+              <!-- /.box-header -->
+              <div class="box-body">
+                <table id="example1" class="table table-bordered table-striped">
+                  <thead>
+                  <tr>
+                    <th></th>
+                    <th>Código</th>
+                    <th>Descripción</th>
+                    <th>Stock</th>
+                    <th>Stock Minimo</th>
+                    <th>Stock Máximo</th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                  <tr>
+                    <th class="center">
+                      <i class="fa fa-remove"></i>
+                      <i class="fa fa-edit"></i>
+                  </th>
+                    <td>1</td>
+                    <td>Producto 1</td>
+                    <td>50</td>
+                    <td>20</td>
+                    <td>100</td>
+                  </tr>
+                 
+                  <tr>
+                    <th class="center">
+                      <i class="fa fa-remove"></i>
+                      <i class="fa fa-edit"></i>
+                  </th>
+                    <td>2</td>
+                    <td>Producto 2</td>
+                    <td>500</td>
+                    <td>100</td>
+                    <td>2000</td>
+                  </tr>
+                  <tr>
+                    <th class="center">
+                      <i class="fa fa-remove"></i>
+                      <i class="fa fa-edit"></i>
+                  </th>
+                    <td>3</td>
+                    <td>Producto 3</td>
+                    <td>150</td>
+                    <td>50</td>
+                    <td>1000</td>
+                  </tr>
+                  <tr>
+                    <th class="center">
+                      <i class="fa fa-remove"></i>
+                      <i class="fa fa-edit"></i>
+                  </th>
+                    <td>4</td>
+                    <td>Producto 4</td>
+                    <td>10</td>
+                    <td>5</td>
+                    <td>50</td>
+                  </tr>
+                  
+                  </tbody>
+                  <!-- <tfoot>
+                  <tr>
+                    <th class="center">
+                      <label class="pos-rel">
+                        <input type="checkbox" class="ace" />
+                        <span class="lbl"></span>
+                      </label>
+                    </th>
+                    <th>Código</th>
+                    <th>Razón Social</th>
+                    <th>Ruc</th>
+                    <th>Nro Telefono</th>
+                    <th>Email</th>
+                  </tr>
+                  </tfoot> -->
+                </table>
+              </div>
+              <!-- /.box-body -->
+            </div>
+            <!-- /.box -->
+          </div>
+          <!-- /.col -->
+        </div>
+        <!-- /.row -->
+      </section>
+
+</body>

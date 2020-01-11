@@ -1,0 +1,354 @@
+<body>
+    <section class="content-header">
+        <h1>
+          Movimientos
+          <small>Vista</small>
+        </h1>
+        <ol class="breadcrumb">
+          <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+          <li><a href="#">Forms</a></li>
+          <li class="active">Movimientos</li>
+        </ol>
+      </section>
+
+    <!-- Main content -->
+    <section class="content">
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="nav-tabs-custom">
+              <ul class="nav nav-tabs">
+                <li class="active"><a href="#fa-icons" data-toggle="tab">Identificación</a></li>
+                <li><a href="#glyphicons" data-toggle="tab">Detalle</a></li>
+              </ul>
+              <div class="tab-content">
+                <!-- Font Awesome Icons -->
+                <div class="tab-pane active" id="fa-icons">
+                  <section id="new">
+                    <div class="box">
+                      <div class="box-body">
+                        <div class="row">
+                          <div class="form-group">
+                              <div class="col-md-6">
+                                  <label for="exampleInputEmail1" class="col-md-4 control-label">Codigo: </label>
+                                  <div class="col-md-8">
+                                    <select class="form-control col-md-12">
+                                      <option>Traspaso entre Almacenes</option>
+                                      <option>Salida por consumo</option>
+                                      <option>Otros</option>
+                                    </select>
+                                  </div>
+                              </div>
+                            
+                          </div>
+                      </div>
+                      
+                      <div class="row">
+                          <div class="form-group">
+                              <div class="col-md-6">
+                                  <label for="exampleInputEmail1" class="col-md-4 control-label">Fecha registro: </label>
+                                  <div class="col-md-8">
+                                      <input type="email" class="form-control" id="exampleInputEmail1" placeholder="dd/mm/yyyy">
+                                  </div>
+
+                              </div>
+                          
+                          </div>
+                      </div>
+      
+                      <div class="row">
+                        <div class="form-group">
+                          <div class="col-md-6">
+                            <label for="exampleInputEmail1" class="col-md-4 control-label">Doc. rerferecia: </label>
+                                  <div class="col-md-8">
+                                    <select class="form-control col-md-12">
+                                      <option>Guia Remisión</option>
+                                      <option>Guia de despacho</option>
+                                      <option>Factura</option>
+                                    </select>
+                                  </div>
+                          </div>
+                        
+                        </div>
+                      </div>
+      
+                      <div class="row">
+                        <div class="form-group">
+                          <div class="col-md-6">
+                            <label for="exampleInputEmail1" class="col-md-4">Nro. Doc. Referencia </label>
+                            <div class="col-md-8">
+                              <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Doc. Referencia">
+                            </div>
+                          </div>
+                       
+      
+                        </div>
+                      </div>
+      
+                      <div class="row">
+                        <div class="form-group">
+                          <div class="col-md-6">
+                            <label for="exampleInputEmail1" class="col-md-4 control-label">Almacén Origen: </label>
+                                  <div class="col-md-8">
+                                    <select class="form-control col-md-12">
+                                      <option>Almacén Central</option>
+                                    </select>
+                                  </div>
+                          </div>
+                         
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="form-group">
+                          <div class="col-md-6">
+                            <label for="exampleInputEmail1" readonly="readonly" class="col-md-4 control-label">Almacén Origen: </label>
+                                  <div class="col-md-8">
+                                    <select class="form-control col-md-12">
+                                      <option>Almacén Doka</option>
+                                      <option>Almacén Obra 1</option>
+                                      <option>Almacén Obra 2</option>
+                                    </select>
+                                  </div>
+                          </div>
+                         
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="form-group">
+                          <div class="col-md-6">
+                            <label for="exampleInputEmail1" readonly="readonly" class="col-md-4 control-label">Motivo de movimiento: </label>
+                                  <div class="col-md-8">
+                                    <select class="form-control col-md-12">
+                                      <option>Salida por servicio de producción</option>
+                                    </select>
+                                  </div>
+                          </div>
+                         
+                        </div>
+                      </div>
+      
+                      </div>
+
+                   
+    
+                      
+                    </div>
+                  </section>
+  
+                </div>
+                <!-- /#fa-icons -->
+  
+                <!-- glyphicons-->
+                <div class="tab-pane" id="glyphicons">
+                    <section id="new2">
+                    
+                  
+                      <!-- Main content -->
+                      <section class="content">
+                        <div class="row">
+                          <!-- left column -->
+                          <div class="col-md-12">
+                            <!-- general form elements -->
+                            <div class="">
+                              <!-- /.box-header -->
+                              <!-- form start -->
+                              <form role="form">
+                                <div class="box-body">
+                                    <div class="modal-footer pull-left">
+                                        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#modal-info">
+                                          Agregar productos
+                                        </button>
+                                      </div>
+                  
+                                  <div class="modal fade" id="modal-info">
+                                    <div class="modal-dialog">
+                                      <div class="modal-content">
+                                        <div class="modal-header">
+                                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span></button>
+                                          <h4 class="modal-title">Productos</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                          <div class="row">
+                                            <div class="form-group">
+                                                <div class="col-md-12">
+                                                    <label for="exampleInputEmail1" class="col-md-4 control-label">Producto: </label>
+                                                    <div class="col-md-8">
+                                                        <div class="input-group input-group-sm">
+                                                            <input type="text" class="form-control">
+                                                                <span class="input-group-btn">
+                                                                  <button type="button" class="btn btn-info btn-flat">Buscar!</button>
+                                                                </span>
+                                                          </div>
+
+                                                        <!-- <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Producto">                         -->
+                                                    </div>
+
+                                                    
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="row">
+                                            <div class="form-group">
+                                                <div class="col-md-12">
+                                                    <label for="exampleInputEmail1" class="col-md-4 control-label">Stock Almacen:</label>
+                                                    <div class="col-md-8">
+                                                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Stock">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                        
+                                        <div class="row">
+                                          <div class="form-group">
+                                            <div class="col-md-12">
+                                              <label for="exampleInputEmail1" class="col-md-4">Unidad de medida: </label>
+                                              <div class="col-md-8">
+                                                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Unidad">
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                        
+                                        <div class="row">
+                                          <div class="form-group">
+                                            <div class="col-md-12">
+                                              <label for="exampleInputEmail1" class="col-md-4">Cantidad traspasada: </label>
+                                              <div class="col-md-8">
+                                                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Cantidad">
+                                              </div>
+                                            </div>
+                        
+                                          </div>
+                                        </div>
+                        
+                        
+                                        </div>
+                                        <div class="modal-footer">
+                                          <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Salir</button>
+                                          <button type="button" class="btn btn-primary">Guardar</button>
+                                        </div>
+                                      </div>
+                                      <!-- /.modal-content -->
+                                    </div>
+                                    <!-- /.modal-dialog -->
+                                  </div>
+                                  <!-- /.modal -->
+                  
+                                </div>
+                                <!-- /.box-body -->
+                  
+                                <!-- <div class="box-footer">
+                                  <button type="submit" class="btn btn-primary">Submit</button>
+                                </div> -->
+                              </form>
+                            </div>
+                            <!-- /.box -->
+                          </div>
+                          
+                        </div>
+                  
+                        <div class="row">
+                          <div class="col-xs-12">
+                            <!-- /.box -->
+                  
+                            <div class="box">
+                              <div class="box-header">
+                                <h3 class="box-title">Listado</h3>
+                              </div>
+                              <!-- /.box-header -->
+                              <div class="box-body">
+                                <table id="example1" class="table table-bordered table-striped">
+                                  <thead>
+                                  <tr>
+                                    <th></th>
+                                    <th>linea</th>
+                                    <th>Producto</th>
+                                    <th>Uni. Medida</th>
+                                    <th>Cantidad traspasada</th>
+                                  </tr>
+                                  </thead>
+                                  <tbody>
+
+                                  <tr>
+                                    <th class="center">
+                                        <i class="fa fa-remove"></i>
+                                    </th>
+                                    <td>1</td>
+                                    <td>Producto 1</td>
+                                    <td>UN</td>
+                                    <td>10</td>
+                                  </tr>
+
+                                  <tr>
+                                    <th class="center">
+                                        <i class="fa fa-remove"></i>
+                                    </th>
+                                    <td>2</td>
+                                    <td>Producto 2</td>
+                                    <td>UN</td>
+                                    <td>20</td>
+                                  </tr>
+
+                                  </tbody>
+                                  <!-- <tfoot>
+                                  <tr>
+                                    <th class="center">
+                                      <label class="pos-rel">
+                                        <input type="checkbox" class="ace" />
+                                        <span class="lbl"></span>
+                                      </label>
+                                    </th>
+                                    <th>Código</th>
+                                    <th>Razón Social</th>
+                                    <th>Ruc</th>
+                                    <th>Nro Telefono</th>
+                                    <th>Email</th>
+                                  </tr>
+                                  </tfoot> -->
+                                </table>
+                              </div>
+                              <!-- /.box-body -->
+                            </div>
+                            <!-- /.box -->
+                          </div>
+                          <div class="row">
+                            <div class="col-xs-12">
+                                <div class="pull-right">
+                                    <button type="button" class="btn btn-danger">
+                                      Imprimir
+                                    </button>
+                                  </div>
+                                <div class="pull-right">
+                                  <button type="button" class="btn btn-info">
+                                    Registrar movimiento
+                                  </button>
+                                </div>
+                                  <div class="pull-right">
+                                    <button type="button" class="btn btn-warning">
+                                      Salir
+                                    </button>
+                                  </div>
+                              
+                            </div>
+                          </div>
+                          <!-- /.col -->
+                        </div>
+                        <!-- /.row -->
+                      </section>
+                    </section>
+                </div>
+                <!-- /#ion-icons -->
+  
+              </div>
+              <!-- /.tab-content -->
+            </div>
+            <!-- /.nav-tabs-custom -->
+          </div>
+          <!-- /.col -->
+        </div>
+        <!-- /.row -->
+      </section>
+</body>

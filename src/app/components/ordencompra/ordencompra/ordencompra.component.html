@@ -1,0 +1,398 @@
+<section class="content-header">
+    <h1>
+        Orden de Compra
+        <small>Compras</small>
+    </h1>
+    <ol class="breadcrumb pull-left">
+        <li><a href="#"><i class="fa fa-dashboard"></i> Compras</a></li>
+        <li class="active">Orden de Compras</li>
+    </ol>
+</section>
+<section class="content">
+    <div class="row">
+        <div class="col-md-6">
+            <!-- Horizontal Form -->
+            <div class="box box-primary">
+                <div class="box-header with-border">
+                    <div class="form-horizontal">
+                        <h3 class="box-title"><strong>Comprobante</strong></h3>
+                        <br>
+                        <div class="form-group col-sm-5 pull-right">
+                            <div class="has-float-label">
+                                <input type="text" class="form-control text-center" id="txtNumeroComprobante" placeholder="Número" value="{{numero_orden}}">
+                                <label for="txtNumeroComprobante">Número</label>
+                            </div>
+                        </div>
+                        <div class="form-group col-sm-2 pull-right">
+                            <div class="has-float-label" style="width: 100%!important;">
+                                <input type="text" class="form-control text-center" id="txtSerie" placeholder="Serie" value="{{serie_orden}}">
+                                <label for="txtSerie">Serie</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <!-- /.box-header -->
+                <!-- general form elements disabled -->
+                <div class="box-body">
+                    <fieldset class="borders">
+                        <div class="">
+                            <legend style='font-size: 12pt;' class="">Datos Solicita orden de compra</legend>
+                            <div class="form-horizontal">
+                                <div class="form-group col-sm-8">
+                                    <div class="input-group ">
+                                        <div class="has-float-label">
+                                            <input type="text" class="form-control" id="txtJML_FechaEmisionEmisor" placeholder="Fecha de Emisión" value="{{JML_fechaemision_emisor}}" disabled>
+                                            <label for="txtJML_FechaEmision">Fecha de Emisión</label>
+                                        </div>
+                                        <div class="input-group-addon">
+                                            <i class="fa fa-calendar"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="form-horizontal">
+                                <div class="form-group col-sm-7">
+                                    <div class="has-float-label" style="width: 100%!important;">
+                                        <input type="text" class="form-control" id="txtJML_NombreEmisor" placeholder="Razón Social" disabled value="{{JML_nombre_emisor}}">
+                                        <label for="txtJML_NombreEmisor">Razón Social</label>
+                                    </div>
+                                </div>
+                                <div class="form-group col-sm-5">
+                                    <div class="has-float-label" style="width: 100%!important;">
+                                        <input type="text" class="form-control" id="txtJML_RUCEmisor" placeholder="RUC" disabled value="{{JML_ruc_emisor}}">
+                                        <label for="txtJML_RUCEmisor">RUC</label>
+                                    </div>
+                                </div>
+                                <!-- <div class="form-group col-sm-7">
+                                    <div class="has-float-label">
+                                        <input type="text" class="form-control" id="txtJMLDireccionEmisor" placeholder="Dirección Fiscal" value="{{JML_direccion_emisor}}" disabled>
+                                        <label for="txtJML_FechaEmision">Dirección Fiscal</label>
+                                    </div>
+                                </div> -->
+                            </div>
+                            <!-- <div class="form-horizontal">
+                                <div class="form-group col-sm-2">
+                                    <div class="has-float-label" style="width: 100%!important;">
+                                        <input type="text" class="form-control" id="txtJML_TelefonoEmisor" placeholder="Teléfono" disabled value="{{JML_telefono_emisor}}">
+                                        <label for="txtJML_TelefonoEmisor">Teléfono</label>
+                                    </div>
+                                </div>
+                                <div class="form-group col-sm-3">
+                                    <div class="has-float-label">
+                                        <input type="text" class="form-control" id="txtJMLAnexoEmisor" placeholder="Anexo" value="{{JML_anexo_emisor}}" disabled value="{{JML_anexo_emisor}}">
+                                        <label for="txtJML_AnexoEmision">Anexo</label>
+                                    </div>
+                                </div>
+                                <div class="form-group col-sm-3">
+                                    <div class="has-float-label" style="width: 100%!important;">
+                                        <input type="text" class="form-control" id="txtJML_CIIUEmisor" placeholder="CIIU" disabled value="{{JML_CIIU_emisor}}">
+                                        <label for="txtJML_CIIUEmisor">CIIU</label>
+                                    </div>
+                                </div>
+                                <div class="form-group col-sm-4">
+                                    <div class="has-float-label" style="width: 100%!important;">
+                                        <input type="text" class="form-control" id="txtJML_SolicitaEmisor" placeholder="Solicita" disabled value="{{JML_solicita_emisor}}">
+                                        <label for="txtJML_SolicitaEmisor">CIIU</label>
+                                    </div>
+                                </div>
+                            </div> -->
+                        </div>
+                    </fieldset>
+
+                    <!-- /.box-body -->
+                </div>
+            </div>
+            <!-- /.box -->
+        </div>
+        <div class="col-md-6">
+            <div class="box box-primary">
+                <div class="box-header with-border">
+                    <div class="form-horizontal">
+                        <h3 class="box-title"><strong>Proveedor</strong></h3>
+                        <br>
+                        <div class="form-group col-sm-12 pull-right">
+                            <div class="input-group">
+                                <div class="has-float-label col-md-4">
+                                    <select class="form-control"><option value="">Código</option><option value="">Nombre</option><option value="">RUC</option></select>
+                                    <label for="txtCodigoProveedor">Buscar por</label>
+                                </div>
+                                <div class="has-float-label col-md-8 ">
+                                    <input type="text" class="form-control" id="txtCodigoProveedor" placeholder="Código de Proveedor">
+                                    <label for="txtCodigoProveedor">Código de Proveedor</label>
+                                </div>
+                                <div class="input-group-btn">
+                                    <button type="button" class="btn btn-primary"><i class="fa fa-search"></i></button>
+                                    <button type="button" class="btn btn-warning"><i class="fa fa-eraser"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <!-- /.box-header -->
+                <!-- form start -->
+                <div class="box-body">
+                    <fieldset class="borders">
+                        <div class="">
+                            <legend style='font-size: 12pt;' class="">Datos Proveedor</legend>
+                            <div class="form-horizontal">
+                                <div class="form-group col-sm-5">
+                                    <div class="has-float-label">
+                                        <input type="text" class="form-control" id="txtJML_NombreComercialProveedor" placeholder="Nombre Comercial" value="{{JML_nombrecomercial_proveedor}}" disabled>
+                                        <label for="txtJML_NombreComercialProveedor">Nombre Comercial</label>
+                                    </div>
+
+                                </div>
+                                <div class="form-group col-sm-7">
+                                    <div class="has-float-label" style="width: 100%!important;">
+                                        <input type="text" class="form-control" id="txtJML_RazonSocialProveedor" placeholder="Razón Social" disabled value="{{JML_razonsocial_proveedor}}">
+                                        <label for="txtJML_RazonSocialProveedor">Razón Social</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-horizontal">
+                                <div class="form-group col-sm-2">
+                                    <div class="has-float-label" style="width: 100%!important;">
+                                        <input type="text" class="form-control" id="txtJML_RUCProveedor" placeholder="RUC" disabled value="{{JML_ruc_proveedor}}">
+                                        <label for="txtJML_RUCProveedor">RUC</label>
+                                    </div>
+                                </div>
+                                <!-- <div class="form-group col-sm-3">
+                                    <div class="has-float-label" style="width: 100%!important;">
+                                        <input type="text" class="form-control" id="txtJML_ContactoProveedor" placeholder="Contacto" disabled value="{{JML_contacto_proveedor}}">
+                                        <label for="txtJML_ContactoProveedor">Contacto</label>
+                                    </div>
+                                </div>
+                                <div class="form-group col-sm-7">
+                                    <div class="has-float-label">
+                                        <input type="text" class="form-control" id="txtJMLDireccionProveedor" placeholder="Dirección" value="{{JML_direccion_proveedor}}" disabled>
+                                        <label for="txtJMLDireccionProveedor">Dirección</label>
+                                    </div>
+                                </div> -->
+                            </div>
+                            <!-- <div class="form-horizontal">
+                                <div class="form-group col-sm-2">
+                                    <div class="has-float-label" style="width: 100%!important;">
+                                        <input type="text" class="form-control" id="txtJML_Banco_Emisor" placeholder="Nombre Banco" disabled value="{{JML_banco_proveedor}}">
+                                        <label for="txtJML_Banco_Emisor">Nombre Banco</label>
+                                    </div>
+                                </div>
+                                <div class="form-group col-sm-3">
+                                    <div class="has-float-label" style="width: 100%!important;">
+                                        <input type="text" class="form-control" id="txtJML_MonedaProveedor" placeholder="Moneda" disabled value="{{JML_moneda_proveedor}}">
+                                        <label for="txtJML_MonedaProveedor">Moneda</label>
+                                    </div>
+                                </div>
+                                <div class="form-group col-sm-3">
+                                    <div class="has-float-label">
+                                        <input type="text" class="form-control" id="txtJMLCtaCorrienteProveedor" placeholder="Cta Corriente" value="{{JML_ctacorriente_proveedor}}" disabled value="{{JML_ctacorriente_proveedor}}">
+                                        <label for="txtJMLCtaCorrienteProveedor">Cta Corriente</label>
+                                    </div>
+                                </div>
+                                <div class="form-group col-sm-4">
+                                    <div class="has-float-label">
+                                        <input type="text" class="form-control" id="txtJMLCtaInterbancariaProveedor" placeholder="Cta Interbancaria" value="{{JML_ctainterbancaria_proveedor}}" disabled value="{{JML_ctacorriente_proveedor}}">
+                                        <label for="txtJMLCtaInterbancariaProveedor">Cta Interbancaria</label>
+                                    </div>
+                                </div>
+                            </div> -->
+                        </div>
+                    </fieldset>
+
+                    <!-- /.box-body -->
+                </div>
+            </div>
+            <!-- /.box -->
+        </div>
+        <div class="col-sm-12">
+            <!-- Horizontal Form -->
+            <div class="box box-primary">
+                <div class="box-header with-border">
+                    <h3 class="box-title">Detalle de Productos</h3>
+                    <div class="col-sm-6 pull-right">
+                        <button type="button" class="btn btn-app pull-right" data-toggle="modal" data-target="#modal-productos">
+                          <i class="fa fa-search"></i> Buscar Productos
+                        </button>
+                    </div>
+                </div>
+                <!-- /.box-header -->
+                <!-- general form elements disabled -->
+                <div class="box-body">
+                    <div class="form-horizontal">
+                        <div class="form-group col-sm-12">
+                            <div class="table-responsive">
+                                <table id="tbl_detalle_productos" class="table table-bordered table-condensed table-hover table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th style='width: 6%;' class="text-center">
+                                            </th>
+                                            <th style='width: 10%;' class="text-center">Cantidad</th>
+                                            <th style='width: 40%;' class="text-center">Descripción</th>
+                                            <th style='width: 10%;' class="text-center">Unidad</th>
+                                            <th style='width: 10%;' class="text-center">Precio Unitario</th>
+                                            <th style='width: 14%;' class="text-center">Precio Total</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="tbody_tbl_detalle_productos">
+                                        <tr data-id='1'>
+                                            <td class="text-center">
+                                                <div class="input-group-btn">
+                                                    <button type="button" class="btn btn-sm btn-danger" (click)="DeleteRow(1);"><i class="fa fa-trash"></i></button>
+                                                </div>
+                                            </td>
+                                            <td><input type="number" class="form-control text-center" value="1"></td>
+                                            <td><select class="form-control"><option value=''>PRODUCTO FICTICIO</option></select></td>
+                                            <td><select class="form-control"><option class="text-center" value=''>UND</option></select></td>
+                                            <td><input type="number" step="0.1" class="form-control text-center" value="34.99"></td>
+                                            <td class="text-right precio_grilla" style="font-size: 14pt; font-weight: bolder;">S/. 34.99</td>
+                                        </tr>
+                                    </tbody>
+                                    <tfoot>
+                                        <tr>
+                                            <td colspan="6" class="text-center"><a href="javascript:void(0);" (click)="AddRowTableDetailProducts()"><i class="fa fa-plus"></i> Agregar Producto</a></td>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <div class="pull-right">
+                                        <button type="button" class="btn btn-danger">
+                                          Imprimir
+                                        </button>
+                                      </div>
+                                    <div class="pull-right">
+                                      <button type="button" class="btn btn-info">
+                                        Guardar Orden
+                                      </button>
+                                    </div>
+                                    <div class="pull-right">
+                                        <button type="button" class="btn btn-primary" >
+                                          Aprobar Orden
+                                        </button>
+                                      </div>
+                                      <div class="pull-right">
+                                        <button type="button" class="btn btn-warning">
+                                          Salir
+                                        </button>
+                                      </div>
+                                  
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                    <!-- /.box-body -->
+                </div>
+            </div>
+            <!-- /.box -->
+        </div>
+    </div>
+</section>
+<section class="footer">
+    <div class="modal fade" id="modal-productos">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Buscar Productos</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="form-horizontal">
+                            <div class="form-group col-sm-12">
+                                <div class="table-responsive">
+                                    <table id="tbl_buscar_productos" class="table table-bordered table-condensed table-hover table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th style='width: 6%;' class="text-center">
+                                                </th>
+                                                <th style='width: 10%;' class="text-center">Codigo</th>
+                                                <th style='width: 40%;' class="text-center">Nombre</th>
+                                                <th style='width: 10%;' class="text-center">Unidad</th>
+                                                <th style='width: 10%;' class="text-center">Precio Unitario</th>
+                                                <th style='width: 14%;' class="text-center">En Stock</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="tbody_tbl_buscar_productos">
+                                            <tr data-id='1'>
+                                                <td class="text-center">
+                                                    <input type="checkbox" class="minimal">
+                                                </td>
+                                                <td class="text-center">P01</td>
+                                                <td>PRODUCTO FICTICIO 1</td>
+                                                <td class="text-center">UND</td>
+                                                <td class="text-right">34.99</td>
+                                                <td class="text-center">Si</td>
+                                            </tr>
+                                            <tr data-id='2'>
+                                                <td class="text-center">
+                                                    <input type="checkbox" class="minimal">
+                                                </td>
+                                                <td class="text-center">P02</td>
+                                                <td>PRODUCTO FICTICIO 2</td>
+                                                <td class="text-center">UND</td>
+                                                <td class="text-right">34.99</td>
+                                                <td class="text-center">Si</td>
+                                            </tr>
+                                            <tr data-id='3'>
+                                                <td class="text-center">
+                                                    <input type="checkbox" class="minimal">
+                                                </td>
+                                                <td class="text-center">P03</td>
+                                                <td>PRODUCTO FICTICIO 3</td>
+                                                <td class="text-center">UND</td>
+                                                <td class="text-right">34.99</td>
+                                                <td class="text-center">Si</td>
+                                            </tr>
+                                            <tr data-id='4'>
+                                                <td class="text-center">
+                                                    <input type="checkbox" class="minimale">
+                                                </td>
+                                                <td class="text-center">P04</td>
+                                                <td>PRODUCTO FICTICIO 4</td>
+                                                <td class="text-center">UND</td>
+                                                <td class="text-right">34.99</td>
+                                                <td class="text-center">Si</td>
+                                            </tr>
+                                            <tr data-id='5'>
+                                                <td class="text-center">
+                                                    <input type="checkbox" class="minimal">
+                                                </td>
+                                                <td class="text-center">P01</td>
+                                                <td>PRODUCTO FICTICIO 5</td>
+                                                <td class="text-center">UND</td>
+                                                <td class="text-right">34.99</td>
+                                                <td class="text-center">Si</td>
+                                            </tr>
+                                        </tbody>
+                                        <tfoot>
+                                            <tr>
+                                                <td colspan="5" class="text-center"></td>
+                                            </tr>
+                                        </tfoot>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Salir</button>
+                    <button type="button" class="btn btn-primary">Guardar</button>
+                </div>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+</section>
+<script>
+    //iCheck for checkbox and radio inputs
+    $('input[type="checkbox"].minimal, input[type="radio"].minimal').iCheck({
+        checkboxClass: 'icheckbox_minimal-blue',
+        radioClass: 'iradio_minimal-blue'
+    })
+</script>
